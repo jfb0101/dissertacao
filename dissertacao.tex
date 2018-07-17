@@ -3,6 +3,13 @@
 
 \usepackage[utf8]{inputenc}
 
+\usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
+\newcommand{\unsure}[1]{\todo[linecolor=red,backgroundcolor=red!25,bordercolor=red]{#1}}
+\newcommand{\change}[1]{\todo[linecolor=blue,backgroundcolor=blue!25,bordercolor=blue]{#1}}
+\newcommand{\info}[1]{\todo[linecolor=green,backgroundcolor=green!25,bordercolor=green]{#1}}
+\newcommand{\improvement}[1]{\todo[linecolor=Plum,backgroundcolor=Plum!25,bordercolor=Plum]{#1}}
+\newcommand{\thiswillnotshow}[1]{\todo[disable]{#1}}
+
 \title{}
 \author{}
 \date{}
@@ -24,19 +31,33 @@
 \subsection{Objetivo Geral}
 Validar se o eletrodiagnóstico automático pode substituir o eletrodiagnóstico manual feito atualmente com a mesma ou maior eficiência.
 \subsection{Objetivos específicos}
-Diminuir o tempo de execução dos exames.
-Aumentar a reprodutibilidade dos exames por meio da avaliação intra e inter observadores.’
-Identificar mais facilmente os pontos de maior excitabilidade muscular.
+\begin{itemize}
+  \item Diminuir o tempo de execução dos exames.
+  \item Aumentar a reprodutibilidade dos exames por meio da avaliação intra e inter observadores.’
+  \item Identificar mais facilmente os pontos de maior excitabilidade muscular.
+\end{itemize}
 
 \section{Variáveis do estudo}
-Serão obtidos idade e sexo dos voluntários
+Serão obtidos idade e sexo dos voluntários.
+
+\section{Critérios de exclusão}
 
 \section{Procedimento}
-A eletroestimulação será feita pelo equipamento proposto no músculo tibial anterior. Entre os eletrodos será fixado um sensor acelerômetro para detectar a contração muscular. Os estímulos aplicados serão ondas retangulares bifásicas com amplitude entre 1 mA e 90 mA e largura de pulso entre 20 $\mu$s e 1 s. Os eletrodos serão fixados com fita microporo e será adicionado gel condutor para melhor contato com a pele. Será feita blablabla  no músculo.
-Em todos os 3 exames a eletroestimulação é interrompida quando detecta-se uma contração muscular.
-Para avaliação da reobase será utilizada uma onda retangular bifásica com largura de pulso de 1 s fixa e 2 s de descando, amplitude começando em 1 mA, sendo incrementada de 1 em 1 mA.
+A eletroestimulação será feita pelo equipamento proposto no músculo tibial anterior da perna dominante. Entre os eletrodos será fixado um sensor acelerômetro para detectar a contração muscular. Os eletrodos e o acelerômetro serão fixados com fita microporo e será adicionado gel condutor aos eletrodos para melhor contato com a pele. Será feita \unsure{esqueci a palavra bonita para “raspar a perna”} no músculo.
+
+Os exames serão feitos simultaneamente pelo avaliador e pelo sistema, afim de comparar posteriormente o momento da detecção da contração muscular entre ambos. Uma análise intra e inter obervadores será conduzida.
+
+Em todos os 3 exames a eletroestimulação é interrompida quando ambos, o avaliador e o sistema, detectarem a contração muscular.
+
+Para avaliação da reobase será utilizada uma onda retangular bifásica com largura de pulso de 1s fixa e 2s de descando, amplitude começando em 1 mA, sendo incrementada de 1 em 1 mA.
+
 Para avaliar a cronaxia também será utilizada uma onda retangular bifásica porém com largura de pulso iniciando 20 $\mu$s incrementando de 20 em 20 $\mu$s, com 2 s de descanso, amplitude de corrente fixa igual a 2 vezes o valor da reobase.
-Na acomodação a onda utilizada será exponencial bifásica com período de 1 s e 2 s de descanso, amplitude iniciando em 1 mA aumentando de 1 em 1 mA.
+
+Na acomodação a onda utilizada será exponencial bifásica com período de 1s e 2s de descanso, amplitude iniciando em 1 mA aumentando de 1 em 1 mA.
+O índice de acomodação será determinado pela razão entre a acomodação e a reobase.
+
+Os voluntários estarão sentados em uma cadeira com apoio para as costas com a perna dominante esticada sobre outra cadeira.
+
 
 
 \end{document}
