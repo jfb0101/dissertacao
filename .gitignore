@@ -4,3 +4,8 @@ dissertacao.fls
 dissertacao.log
 dissertacao.synctex.gz
 dissertacao.pdf
+bibliografia.bib.bak
+dissertacao.blg
+bibliografia.bib.sav
+dissertacao.bbl
+.gitignore
