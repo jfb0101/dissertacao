@@ -3,6 +3,8 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage{acro}
+\usepackage{float}
+\usepackage[portuguese]{babel}
 
 \usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
 \newcommand{\unsure}[1]{\todo[linecolor=red,backgroundcolor=red!25,bordercolor=red]{#1}}
@@ -11,8 +13,8 @@
 \newcommand{\improvement}[1]{\todo[linecolor=Plum,backgroundcolor=Plum!25,bordercolor=Plum]{#1}}
 \newcommand{\thiswillnotshow}[1]{\todo[disable]{#1}}
 
-\title{}
-\author{}
+\title{Plano de Dissertação \\ Desenvolvimento e Validação de Equipamento para Eletrodiagnóstico Automático}
+\author{Jonathan Ferreira Bispo}
 \date{}
 
 \pdfinfo{%
@@ -27,12 +29,35 @@
 \input{siglas/siglas}
 
 \begin{document}
+
 \maketitle
+
+\begin{center}
+  \textbf{UNIVERSIDADE FEDERAL DE MINAS GERAIS}
+
+  \textbf{PROGRAMA DE PÓS-GRADUÇÃO EM ENGENHARIA ELÉTRICA}
+
+  \textbf{LINHA DE PESQUISA: ENGENHARIA BIOMÉDICA}
+\end{center}
+
+\begin{description}
+  \item [Orientador:] Prof. Dr. Henrique Resende Martins
+\end{description}
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
 \input{introducao/introducao}
 \input{objetivos/objetivos}
 \input{variaveis-estudo/variaveis-estudo}
 \input{criterios-inclusao-exclusao/criterios-inclusao-exclusao}
 \input{procedimento/procedimento}
+\input{disciplinas/disciplinas}
+\input{cronograma/cronograma}
+
 
 \bibliographystyle{unsrt}
 \bibliography{bibliografia}
