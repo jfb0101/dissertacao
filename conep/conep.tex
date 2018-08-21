@@ -1,0 +1,41 @@
+\documentclass[a4paper,10pt]{article}
+    %\documentclass[a4paper,10pt]{scrartcl}
+    
+    \usepackage[utf8]{inputenc}
+    \usepackage{acro}
+    \usepackage{float}
+    \usepackage[portuguese]{babel}
+    
+    \usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
+    \newcommand{\unsure}[1]{\todo[linecolor=red,backgroundcolor=red!25,bordercolor=red]{#1}}
+    \newcommand{\change}[1]{\todo[linecolor=blue,backgroundcolor=blue!25,bordercolor=blue]{#1}}
+    \newcommand{\info}[1]{\todo[linecolor=green,backgroundcolor=green!25,bordercolor=green]{#1}}
+    \newcommand{\improvement}[1]{\todo[linecolor=Plum,backgroundcolor=Plum!25,bordercolor=Plum]{#1}}
+    \newcommand{\thiswillnotshow}[1]{\todo[disable]{#1}}
+    
+    \title{Plano de Dissertação \\ Desenvolvimento e Validação de Sistema para Eletrodiagnóstico Automático da Excitabilidade Neuromuscular}
+    \author{Jonathan Ferreira Bispo}
+    \date{}
+    
+    \pdfinfo{%
+      /Title    ()
+      /Author   ()
+      /Creator  ()
+      /Producer ()
+      /Subject  ()
+      /Keywords ()
+    }
+    
+    \input{siglas/siglas}
+    
+    \begin{document}
+    
+    \maketitle
+    
+    \input{introducao/introducao}
+    
+    \bibliographystyle{unsrt}
+    \bibliography{bibliografia}
+    
+    \end{document}
+    
