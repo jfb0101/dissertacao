@@ -2,7 +2,7 @@
 
 A eletroestimulação será feita pelo equipamento proposto no músculo tibial anterior da perna dominante. Entre os eletrodos será fixado um sensor acelerômetro para detectar a contração muscular por meio do circuito de biofeedback. Os eletrodos e o acelerômetro serão fixados com fita microporo e será adicionado gel condutor aos eletrodos para melhorar o contato com a pele. Será feita tricotomia na pele.
 
-O sistema será dividido em quatro partes principais: Unidade de Controle, Unidade de Potência, Biofeedback e Interface Gráfica. A unidade de controle será responsável por gerar as formas de onda, em tempo real, por meio dos \ac{dac} de um microcontrolador. A unidade de potência alimentará todo o sistema fornecendo as tensões necessárias para os diversos componentes atuarem. Serão utilizadas fontes de corrente controladas por tensão para gerar os estímulos. O sistema de biofeedback será composto pelo acelerômetro utilizado para detectar a contração muscular. Um algoritmo que lê continuamente os eixos do acelerômetro será escrito para identificar alguma variação considerável em dua posição, detectando assim a contração muscular. A inteface gráfica com o usuário será um aplicativo Android que se comunicará via bluetooth com o eletroestimulador.
+O sistema será dividido em quatro partes principais: Unidade de Controle, Unidade de Potência, Biofeedback e Interface Gráfica. A unidade de controle será responsável por gerar as formas de onda, em tempo real, por meio dos \ac{dac} de um microcontrolador. A unidade de potência alimentará todo o sistema fornecendo as tensões necessárias para os diversos componentes atuarem. Serão utilizadas fontes de corrente controladas por tensão com espelho de Wilson para gerar os estímulos. O sistema de biofeedback será composto pelo acelerômetro utilizado para detectar a contração muscular. Um algoritmo que lê continuamente os eixos do acelerômetro será escrito para identificar alguma variação considerável em dua posição, por meio da mensuração do desvio padrão antes e durante a aplicação do estímulo, detectando assim a contração muscular. A inteface gráfica com o usuário será um aplicativo Android que se comunicará via interface serial com o eletroestimulador.
 
 O eletroestimulador possuirá 12 canais, permitindo que 12 grupos musculares sejam estimulados simultamente. Para o presente trabalho, somente o músculo tibial anterior será eletroestimulado.
 
@@ -25,4 +25,6 @@ No presente trabalho não será avaliada a acomodação, pois ela possui o mesmo
 Os voluntários estarão sentados em uma cadeira com apoio para as costas com a perna dominante esticada sobre outra cadeira.
 
 Os resultados obtidos pelo equipamento serão armazenados em arquivo CSV e enviados para um servidor central para posterior análise estatística.
+
+
 
